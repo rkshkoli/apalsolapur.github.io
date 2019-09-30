@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menudrop{
+    width: 100%;
+    height: 100%;
+    margin: 0% auto;
+}
+.menudrop ul{
+    padding: 0%;
+
+}
+.menudrop ul li{
+    float: left;
+    background-color: black;
+    color: white;
+    width: 105px;
+    height: 50px;
+    line-height:50px;
+    font-size:18px;
+    text-align:center;
+    list-style: none;
+    opacity: 0.6;
+}
+.menudrop ul li ul{
+    display: none;
+}
+.menudrop ul li:hover > ul{
+    display: block;
+}
+.menudrop ul li:hover{
+    background-color: #32CD32;
+    opacity: 0.8;
+}
+.menudrop ul li ul li{
+    position: relative;
+}
+.menudrop ul li ul li ul{
+    position: absolute;
+    left: 105px;
+    top: 0px;
+}
+.searchbar{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%)
+
+}
+input{
+    border: 3px solid #32e17c;
+    height: 40px;
+    width: 400px;
+    border-radius: 50px;
+    padding: 0px 10px;
+}
+.search-box-wrapper{
+    display: inline-flex;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%)
+
+}
+.search-box-input{
+    font-size: inherit;
+    border: 0.2em solid #7e7;
+    border-radius: 0.5em 0 0 0.5em;
+    padding: 0.2em 0.5em;
+    outline: 0;
+
+
+}
+.search-box-input:hover, .search-box-input:focus{
+    border-color: #4d4;
+}
+.search-box-button{
+    font-size: inherit;
+    border: 0.2em solid #7e7;
+    border-radius: 0 0.5em 0.5em 0;
+    background-color: #7e7;
+    border-left: 0;
+    padding: 0 0.7em;
+    color: white;
+    font-weight: bold;
+    outline: 0;
+
+}
+.search-box-button:hover, .search-box-button:focus{
+    border-color: #4d4;
+    background-color: #4d4;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+
+}
+h1{
+    font-size: 36px;
+    color: #555;
+    font-weight: bold; 
+}
+h4{
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+#team img{
+    margin-top: -50px;
+}
+#team i{
+    font-size: 26;
+    color: #555;
+
+}
+#team p{
+    font-weight: 500;
+}
+#team .card{
+    border-radius: 0;
+    box-shadow: 5px 5px 15px #e74c3c;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+
+}
+#team .card:hover{
+    background: #e74c3c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 10px #9E9E9E;
+}
+#team .card:hover h3, #team .card:hover i{
+    color: #fff;
+
+}
